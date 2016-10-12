@@ -443,10 +443,11 @@
                     id: id
                 });
             if (!user) return;
-            var $input = this.$('.lcb-entry-input'),
-                text = $.trim($input.val()),
-                at = (text.length > 0 ? ' ' : '') + '@' + user.get('username') + ' '
-            $input.val(text + at).focus();
+            // TODO: Create 1-1 room if it doesn't exist, else open it
+            // var $input = this.$('.lcb-entry-input'),
+            //     text = $.trim($input.val()),
+            //     at = (text.length > 0 ? ' ' : '') + '@' + user.get('username') + ' '
+            // $input.val(text + at).focus();
         },
         upload: function(e) {
             e.preventDefault();
